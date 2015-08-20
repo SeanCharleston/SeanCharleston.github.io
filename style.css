@@ -1,0 +1,263 @@
+body{
+	background-color: rgb(100,100,100);
+	color: #000305;
+	font-size: 87.5%; /*Base font size is 14px*/
+	font-family: Arial, 'Lucidia Sans Unicode';
+	line-height: 1.5;
+	text-align: justify;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link, a:visited{
+	color: #CF5C3F;
+}
+
+a:hover, a:active{
+	color: #CF5C3F;
+}
+
+.body{
+	margin: 0 auto;
+	width: 60%;
+	clear: both;
+}
+
+.mainHeader img{
+	width: 30%;
+	height: auto;
+	margin: 2% 0;
+}
+
+.mainNav{
+	background-color: rgb(100,100,100);
+	height: 40px;
+	margin-top: 5%;
+	border-bottom: 2px solid white;
+	font-size: 140%; /*Base font size is 14px*/
+	font-family: Tahoma, 'Lucidia Sans Unicode';
+}
+
+
+.mainNav ul{
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainNav ul li{
+	float: left;
+	display: inline;
+
+}
+
+.mainNav a:link, .mainNav a:visited{
+	color: #FFF;
+	transition: color 0.5s;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 20px;
+}
+
+.mainNav a:hover, .mainNav a:active,
+.mainNav .active a:link, .mainNav .active a:visited{
+	color: #CF5C3F;
+	text-shadow: none;
+}
+
+
+
+.cvNav{
+	background-color: rgb(100,100,100);
+	width: 15%;
+	border-right: 2px solid white;
+	font-size: 140%; /*Base font size is 14px*/
+	font-family: Tahoma, 'Lucidia Sans Unicode';
+	margin-top: 2%;
+	margin-right: 2%;
+	float:left;
+}
+
+.cvNav ul{
+	background-color: rgb(100,100,100);
+	list-style: none;
+}
+
+.cvNav ul li{
+	background-color: rgb(100,100,100);
+	margin-bottom:8px;
+	margin-right:7px;
+}
+
+.cvNav a:link, .cvNav a:visited{
+	display: block;
+	color: #FFF;
+	transition: color 0.5s;
+	text-align: right;
+}
+
+.cvNav a:hover, .cvNav a:active,
+.cvNav .active a:link, .cvNav .active a:visited{
+	color: #CF5C3F;
+	text-shadow: none;
+}
+
+.skills{
+	transition: color 0.2s;
+}
+
+.skills:hover{
+	color: #CF5C3F;
+}
+
+.mainHeader nav .contact{
+	float: right;
+}
+
+.mainContent{
+	line-height: 25px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.content{
+	width: 60%;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.topContent{
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 20px;
+}
+
+.bottomContent{
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 3%;
+}
+
+.postInfo{
+	font-style: italic;
+	color: #999;
+	font-size: 89%;
+}
+
+.topSidebar{
+	width: 12%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding: 2.2% 3%;
+}
+
+.middleSidebar{
+	width: 21%;
+	float:left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-left: 3%;
+	margin-top: 10px;
+	padding: 3% 3%;
+}
+
+.bottomSidebar{
+	width: 21%;
+	float:left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-left: 3%;
+	margin-top: 5px;
+	padding: 3% 3%;
+}
+
+.mainFooter{
+	clear: both;
+	width: 100%;
+	height: 40px;
+	float: left;
+	background-color: rgb(100,100,100);
+
+	margin: 2% 0;
+	border-top: 2px solid white;
+}
+
+.mainFooter p{
+	width: 92%;
+	margin: 1.2% auto;
+	color: #FFF;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 600px){
+	.body{
+		width: 90%;
+		font-size: 95%;
+	}
+
+	.mainHeader img{
+		width: 100%;
+	}
+
+	.mainHeader nav{
+		height: 160px;
+	}
+
+	.mainHeader nav ul{
+		padding-left: 0;
+	}
+
+	.mainHeader nav ul li{
+		width: 100%;
+		text-align: center;
+	}
+
+	.mainHeader nav a:link, .mainHeader nav a:visited{
+		padding: 10px 25px;
+		height: 20px;
+		display:block;
+	}
+	.content{
+		width: 100%;
+	}
+
+	.postInfo{
+		display:none;
+	}
+
+	.topSidebar{
+		width: 94%;
+		margin: 2%  0;
+		padding: 2% 3%;
+	}
+
+	.middleSidebar{
+		width: 94%;
+		margin: 2%  0;
+		padding: 2% 3%;
+	}
+
+	.bottomSidebar{
+		width: 94%;
+		margin: 2%  0;
+		padding: 2% 3%;
+	}
+}

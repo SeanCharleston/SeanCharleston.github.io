@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>My Website</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="../style.css" type="text/css" />
+	<script src="cv.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>		
+
+<body class="body">
+	<header class="mainHeader">
+		<nav class ="mainNav">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../aboutme.html">About Me</a></li>
+				<li class="active"><a href="../cv.html">Curriculum Vitae</a></li>
+				<li><a href="../blog.html">Blog</a></li>
+				<li><a href="../photography.html">Photography</a></li>
+				<li><a href="../interests.html">Interests and Hobbies</a></li>
+				<li class="contact"><a href="../contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<nav class="cvNav">
+			<ul>
+				<li><a href="../cv.html">Overview</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="employment.html">Employment History</a></li>
+				<li><a href="academic.html">Academic Summary</a></li>
+				<li class="active"><a href="interests.html">Interests and Achievements</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="mainContent">
+		<div class="content">
+			<article class="topContent">
+				<header>
+					<h2><a href="#" title="First Post">Interests</a></h2>
+				</header>
+				<content>
+						<div onClick="openClose('astro')" style="cursor:hand; cursor:pointer" class="skills"><b>Astronomy and Cosmology</b></div>
+					<div id="astro" class="texter">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					</div>
+					<div onClick="openClose('crick')" style="cursor:hand; cursor:pointer" class="skills"><b>Cricket</b></div>
+					<div id="crick" class="texter">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					</div>
+					<div onClick="openClose('music')" style="cursor:hand; cursor:pointer" class="skills"><b>Music</b></div>
+					<div id="music" class="texter">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					</div>
+					<div onClick="openClose('football')" style="cursor:hand; cursor:pointer" class="skills"><b>Football</b></div>
+					<div id="football" class="texter">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					</div>
+				</content>
+			</article>
+			<article class="bottomContent">
+				<header>
+					<h2><a href="#" title="Second Post">Achievements</a></h2>
+				</header>
+				<content>
+					<table style="width:80%">
+						<tr>
+					 		<td><b>2014:</b></td>
+					 		<td>The Dick and Mary Earle Scholarship in Technology</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>The University of Waikato Master's Research Scholarship</td>
+						</tr>
+						<tr>
+					 		<td><b>2013:</b></td>
+					 		<td>Gold Key - Waikato Chapter</td>
+						</tr>
+						<tr>
+					 		<td><b>2012:</b></td>
+					 		<td>St. John, First Aid Level 1</td>
+						</tr>
+					</table>
+				</content>
+			</article>
+		</div>
+	</div>
+
+
+
+	<footer class="mainFooter">
+		<p>Copyright &copy; Sean Charleston 2015</p>
+	</footer>
+
+</body>
+
+</html>
