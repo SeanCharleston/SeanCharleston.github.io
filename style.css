@@ -12,10 +12,18 @@ a{
 }
 
 a:link, a:visited{
-	color: #CF5C3F;
+	color: #000;
 }
 
 a:hover, a:active{
+	color: #CF5C3F;
+}
+
+.ohead{
+	color: #CF5C3F;
+}
+
+.ohead a{
 	color: #CF5C3F;
 }
 
@@ -206,6 +214,7 @@ a:hover, a:active{
 	margin: 1.2% auto;
 	color: #FFF;
 }
+
 
 @media only screen and (min-width: 150px) and (max-width: 600px){
 	.body{
