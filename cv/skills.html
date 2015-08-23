@@ -5,6 +5,7 @@
 	<title>My Website</title>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="../style.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="cv.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>		
@@ -40,61 +41,117 @@
 					<h2 class="ohead">Technical Skills</h2>
 				</header>
 				<content>
-					<div onClick="openClose('plc')" style="cursor:hand; cursor:pointer" class="skills"><b>PLC programming (Ladder Logic, Structured Text, Sequential Function Chart)</b></div>
-					<div id="plc" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							PLC programming (Ladder Logic, Structured Text, Sequential Function Chart)
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('programming')" style="cursor:hand; cursor:pointer" class="skills"><b>Computer programming (C, C++, C#, MATLAB, Simulink, LabVIEW)</b></div>
-					<div id="programming" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Computer programming (C, C++, C#, MATLAB, Simulink, LabVIEW)
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('tof')" style="cursor:hand; cursor:pointer" class="skills"><b>Time-of-Flight camera knowledge and experience</b></div>
-					<div id="tof" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Time-of-Flight camera knowledge and experience
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('doc')" style="cursor:hand; cursor:pointer" class="skills"><b>Documentation and record keeping</b></div>
-					<div id="doc" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Documentation and record keeping
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('office')" style="cursor:hand; cursor:pointer" class="skills"><b>Advanced computer skills including the Microsoft Office Suite</b></div>
-					<div id="office" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Advanced computer skills including the Microsoft Office Suite
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('solder')" style="cursor:hand; cursor:pointer" class="skills"><b>Soldering</b></div>
-					<div id="solder" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Soldering
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('circuit')" style="cursor:hand; cursor:pointer" class="skills"><b>Circuit design</b></div>
-					<div id="circuit" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Circuit design
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('spice')" style="cursor:hand; cursor:pointer" class="skills"><b>Circuit simulation (SPICE)</b></div>
-					<div id="spice" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Circuit simulation (SPICE)
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('diagrams')" style="cursor:hand; cursor:pointer" class="skills"><b>Electrical and Circuit diagrams</b></div>
-					<div id="diagrams" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Electrical and Circuit diagrams
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('pcb')" style="cursor:hand; cursor:pointer" class="skills"><b>PCB Design (Altium)</b></div>
-					<div id="pcb" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							PCB Design (Altium)
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('cad')" style="cursor:hand; cursor:pointer" class="skills"><b>Computer Aided Design (AutoCAD)</b></div>
-					<div id="cad" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Computer Aided Design (AutoCAD)
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('plcd')" style="cursor:hand; cursor:pointer" class="skills"><b>PLC diagrams</b></div>
-					<div id="plcd" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							PLC diagrams
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('tex')" style="cursor:hand; cursor:pointer" class="skills"><b>Report writing (LaTeX)</b></div>
-					<div id="tex" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Report writing (LaTeX)
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('workshop')" style="cursor:hand; cursor:pointer" class="skills"><b>General workshop skills</b></div>
-					<div id="workshop" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							General workshop skills
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
 				</content>
 			</article>
@@ -103,25 +160,45 @@
 					<h2 class="ohead">Soft Skills</h2>
 				</header>
 				<content>
-					<div onClick="openClose('problem')" style="cursor:hand; cursor:pointer" class="skills"><b>Problem Solving</b></div>
-					<div id="problem" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Problem Solving
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('teamwork')" style="cursor:hand; cursor:pointer" class="skills"><b>Teamwork</b></div>
-					<div id="teamwork" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Teamwork
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('time')" style="cursor:hand; cursor:pointer" class="skills"><b>Time Management</b></div>
-					<div id="time" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Time Management
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('comm')" style="cursor:hand; cursor:pointer" class="skills"><b>Communication</b></div>
-					<div id="comm" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Communication
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
-					<div onClick="openClose('prof')" style="cursor:hand; cursor:pointer" class="skills"><b>Professionalism</b></div>
-					<div id="prof" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Professionalism
+						</div>
+						<div class="childText">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+						</div>
 					</div>
 				</content>
 			</article>

@@ -111,14 +111,6 @@ a:hover, a:active{
 	text-shadow: none;
 }
 
-.skills{
-	transition: color 0.2s;
-}
-
-.skills:hover{
-	color: #CF5C3F;
-}
-
 .mainHeader nav .contact{
 	float: right;
 }
@@ -215,6 +207,20 @@ a:hover, a:active{
 	color: #FFF;
 }
 
+
+.parentText {
+	font-weight: bold;
+	cursor:pointer;
+	transition: color 0.2s;
+}
+
+.parentText:hover{
+	color: #CF5C3F;
+}
+
+.childText {
+	display: none;
+}
 
 @media only screen and (min-width: 150px) and (max-width: 600px){
 	.body{
