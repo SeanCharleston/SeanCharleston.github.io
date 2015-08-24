@@ -1,0 +1,36 @@
+.parentText {
+	font-weight: bold;
+	cursor:pointer;
+	transition: color 0.2s;
+}
+
+.parentText:hover{
+	color: #CF5C3F;
+}
+
+.childText {
+	display: none;
+}
+
+.pText {
+	font-weight: bold;
+	cursor:pointer;
+	transition: color 0.2s;
+}
+
+.pText:hover{
+	color: #CF5C3F;
+}
+
+.cText {
+	display: none;
+}
+
+.collapseHead{
+	cursor:pointer;
+	transition: color 0.2s;
+}
+
+.collapseHead:hover{
+	color: #000;
+}

@@ -1,61 +1,88 @@
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:first-child {
+  margin-top: 10px;
+}
 
- /* Parallax base styles
-  --------------------------------------------- */
+section.module:last-child {
+  margin-bottom: 0;
+}
 
-  .parallax {
-	margin-top: 5%;
-	overflow-x: hidden;
-    overflow-y: auto;
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  margin-top:0;
+}
+section.module p {
+  font-size: 16px;
+  font-weight: 300;
 
-    height: 100vh;
-     -webkit-perspective: 1px;
-    perspective: 1px;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  margin:0;
+}
+
+section.contents{
+  background-color: white;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding:10px;
+}
+
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  line-height: 600px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  margin:20px;
+}
+section.module.parallax-1 {
+  background-image: url("img/photography/guitarSmall.jpg"); 
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-top:20px;
+}
+section.module.parallax-2 {
+  background-image: url("img/photography/keyboardSmall.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("img/photography/munichSmall.jpg");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
   }
-
-  .parallax__layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  section.module p {
+    font-size: 20px;
   }
-
-  .parallax__layer--base {
-
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+  section.module.parallax h1 {
+    font-size: 96px;
   }
-
-  .parallax__layer--back {
-
-    -webkit-transform: translateZ(-1px) scale(2);
-    transform: translateZ(-1px) scale(2);
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
   }
-
-
-  /* demo styles
-  --------------------------------------------- */
-
-   .parallax {
-    font-size: 200%;
-	text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;  
-    color: #FFF;
-  }
-
-   /* add some padding to force scrollbars */
-  .parallax__layer {
-    padding: 0vh 0;
-  }
-
-   /* centre the content in the parallax layers */
-  .title {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+}

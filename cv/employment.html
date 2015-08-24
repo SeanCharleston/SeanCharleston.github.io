@@ -4,8 +4,10 @@
 <head>
 	<title>My Website</title>
 	<meta charset="utf-8"/>
-
+	<link rel="stylesheet" href="cv.css" type="text/css" />
 	<link rel="stylesheet" href="../style.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="cv.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>		
 
@@ -37,16 +39,40 @@
 		<div class="content">
 			<article class="topContent">
 				<header>
-					<h2 class="ohead">Research Developer</h2>
+					<h2 class="collapseHead">Research Developer</h2>
 				</header>
-				<content>
-					<p><i>May 2014 - Feb 2015</i></p>
-					<table style="width:100%">
-						<tr>
-					 		<td><b>Company:</b> WaikatoLink Limited</td>
-					 		<td><b>LOB:</b> Instantaneous Water Heating</td>		
-						</tr>
-					</table>
+				<p><i>May 2014 - Feb 2015</i></p>
+				<table style="width:100%">
+					<tr>
+				 		<td><b>Company:</b><a href="http://www.waikatolink.co.nz/"> WaikatoLink Limited</a></td>
+				 		<td align="right"><b>LOB:</b> Instantaneous Water Heating</td>		
+					</tr>
+				</table>
+				<content class="employment">
+					<p>I was involved in a water heating project with WaikatoLink, in which I undertook a range of roles. Firstly, I produced an integrated system, which monitored a variety of inputs and outputs, communicating with a local computer. I also produced a control system, which automatically managed the system. I was then responsible for performing a range of tests and experiments on the prototype, and assisted in the writing of the final technical outputs, including a conference paper. The key challenges of this project were in dealing with high-power systems, whilst managing a large amount of inputs/outputs and data.</p>
+					<p><b>Responsibilities</b></p>
+					<ul>
+						<li>Managing high power systems (15kW)</li>
+						<li>Developing an embedded system for monitoring and controlling various inputs and outputs</li>
+						<li>Producing a control system to reach target output profiles</li>
+						<li>Data management, testing, and experimentation</li>
+						<li>Producing final technical outputs and a prototype demonstration</li>
+					</ul>
+				</content>
+			</article>
+
+			<article class="topContent">
+				<header>
+					<h2 class="collapseHead">Research Assistant</h2>
+				</header>
+				<p><i>Jan 2014 - Apr 2014</i></p>
+				<table style="width:100%">
+					<tr>
+				 		<td><b>Company:</b><a href="http://www.waikato.ac.nz/"> The University of Waikato</a></td>
+				 		<td align="right"><b>LOB:</b> Time-of-Flight Camera Development</td>		
+					</tr>
+				</table>
+				<content class="employment">
 					<p>The Chronoptics team, based at the University of Waikato were approached by Plant & Food Research Ltd., who are exploring numerous 3D vision techniques for grading fruit. This project was focused around investigating and improving the issues surrounding motion in time-of-flight cameras, as well as an analysis on subsurface scattering within fruit, as a result of the infra-red light associated with the cameras.</p>
 					<p>I was responsible for running experiments and implementing various algorithms in the project. This included controlled simulation experiments on a moving translation stage, as well as implementing novel motion correction algorithms. The project was extremely challenging and rewarding, with all of the initial outcomes being met, concluding with a technical report.</p>
 					<p><b>Responsibilities</b></p>
@@ -61,40 +87,16 @@
 
 			<article class="topContent">
 				<header>
-					<h2 class="ohead">Research Assistant</h2>
+					<h2 class="collapseHead">Research Assistant</h2>
 				</header>
-				<content>
-					<p><i>Jan 2014 - Apr 2014</i></p>
-					<table style="width:100%">
-						<tr>
-					 		<td><b>Company:</b> The University of Waikato</td>
-					 		<td><b>LOB:</b> Time-of-Flight Camera Development</td>		
-						</tr>
-					</table>
-					<p>The Chronoptics team, based at the University of Waikato were approached by Plant & Food Research Ltd., who are exploring numerous 3D vision techniques for grading fruit. This project was focused around investigating and improving the issues surrounding motion in time-of-flight cameras, as well as an analysis on subsurface scattering within fruit, as a result of the infra-red light associated with the cameras.</p>
-					<p>I was responsible for running experiments and implementing various algorithms in the project. This included controlled simulation experiments on a moving translation stage, as well as implementing novel motion correction algorithms. The project was extremely challenging and rewarding, with all of the initial outcomes being met, concluding with a technical report.</p>
-					<p><b>Responsibilities</b></p>
-					<ul>
-						<li>Applying and modifying previous calibrations for motion</li>
-						<li>Developing software to implement novel motion correction techniques</li>
-						<li>Running controlled experiments with motion</li>
-						<li>Producing fortnightly update reports to Plant & Food Research Ltd.</li>
-					</ul>
-				</content>
-			</article>
-
-			<article class="topContent">
-				<header>
-					<h2 class="ohead">Research Assistant</h2>
-				</header>
-				<content>
-					<p><i>Oct 2013 - Jan 2014</i></p>
-					<table style="width:100%">
-						<tr>
-					 		<td><b>Company:</b> WaikatoLink Limited</td>
-					 		<td><b>LOB:</b> Agricultural Research and Development</td>		
-						</tr>
-					</table>
+				<p><i>Oct 2013 - Jan 2014</i></p>
+				<table style="width:100%">
+					<tr>
+				 		<td><b>Company:</b><a href="http://www.waikatolink.co.nz/"> WaikatoLink Limited</a></td>
+				 		<td align="right"><b>LOB:</b> Agricultural Research and Development</td>		
+					</tr>
+				</table>
+				<content class="employment">
 					<p>Upon completion of my Engineering Degree, I undertook a contract as an extension to my honours research project. I was involved with the Chronoptics research group at the University of Waikato, as well as an external company, Farmshed Labs, who specialise in interfacing agriculture with technology.</p>
 					<p>This project investigated the use of time-of-flight cameras in the dairy environment. The Chronoptics group’s state of the art algorithms were implemented, in an attempt to correct common drawbacks of time-of-flight technology including multipath interference.</p>
 					<p>Some of the key achievements of this contract included reverse engineering a commercial camera’s calibration system, developing a Graphical User Interface (GUI) in MATLAB for external testing of software, and calibrating the existing algorithms for practical applications. The ultimate output goals of the project were to produce a management level presentation aimed at large dairy companies, and provide a technical report.</p>
@@ -110,16 +112,16 @@
 
 			<article class="topContent">
 				<header>
-					<h2 class="ohead">Software and Prototype Developer</h2>
+					<h2 class="collapseHead"><a name="plantfood">Software and Prototype Developer</a></h2>
 				</header>
-				<content>
-					<p><i>Nov 2012 – Feb 2013</i></p>
-					<table style="width:100%">
-						<tr>
-					 		<td><b>Company:</b> Plant & Food Research</td>
-					 		<td><b>LOB:</b> Agricultural Research and Development</td>		
-						</tr>
-					</table>
+				<p><i>Nov 2012 – Feb 2013</i></p>
+				<table style="width:100%">
+					<tr>
+				 		<td><b>Company:</b><a href="http://www.plantandfood.co.nz/"> Plant & Food Research</a></td>
+				 		<td align="right"><b>LOB:</b> Agricultural Research and Development</td>		
+					</tr>
+				</table>
+				<content class="employment">
 					<p>For my second Engineering Work Placement I worked on a project to grade various fruits and vegetables. My role was in the software development area of the project using LabVIEW to increase the usability and functionality of software for a LabJack (USB measurement and automation device). This also included integrating an easy way to export data, as well as interfacing new instruments (a flow meter and an injection valve).</p>
 					<p>Once this software was operational, I was producing prototypes of the sensing system using the LabVIEW software, as well as running all experiments and maintaining the hardware. I was required to discuss my findings and issues at weekly meetings with other Engineers, Scientists and Team Leaders.</p>
 					<p>Towards the end of the placement I gave a presentation to the company, outlining the project goals, achievements and the current limitations.</p>
@@ -135,16 +137,16 @@
 
 			<article class="topContent">
 				<header>
-					<h2 class="ohead">Development Engineer</h2>
+					<h2 class="collapseHead">Development Engineer</h2>
 				</header>
-				<content>
-					<p><i>Jun 2012 – Aug 2012</i></p>
-					<table style="width:100%">
-						<tr>
-					 		<td><b>Company:</b> Corrective Building Surveyors</td>
-					 		<td><b>LOB:</b> Building Inspection</td>		
-						</tr>
-					</table>
+				<p><i>Jun 2012 – Aug 2012</i></p>
+				<table style="width:100%">
+					<tr>
+				 		<td><b>Company:</b><a href="http://www.correctivebuilding.co.nz/"> Corrective Building Surveyors</a></td>
+				 		<td align="right"><b>LOB:</b> Building Inspection</td>		
+					</tr>
+				</table>
+				<content class="employment">
 					<p>I was employed part time during the University semester to begin the development of a project, focused around the detection of moisture in wood. Initially I performed a large amount of research and documentation. I was then involved in reverse engineering aspects of the solution which required troubleshooting and determination. Once the above was complete I was responsible for the initial circuit design and producing of a number concepts for testing.</p>
 					<p>I primarily worked autonomously and it was my responsibility to document my findings, complete work and communicate progress to my supervisor. This included weekly reports that outlined required resources for the following week as well as areas of concern to my supervisors.</p>
 					<p><b>Responsibilities</b></p>
@@ -159,16 +161,16 @@
 
 			<article class="topContent">
 				<header>
-					<h2 class="ohead">I&E Engineering Assistant</h2>
+					<h2 class="collapseHead"><a name="ballance">I&E Engineering Assistant</a></h2>
 				</header>
-				<content>
-					<p><i>Nov 2011 – Feb 2012</i></p>
-					<table style="width:100%">
-						<tr>
-					 		<td><b>Company:</b> Ballance Agri-Nutrients, Taranaki</td>
-					 		<td><b>LOB:</b> Crop Fertilisation</td>		
-						</tr>
-					</table>
+				<p><i>Nov 2011 – Feb 2012</i></p>
+				<table style="width:100%">
+					<tr>
+				 		<td><b>Company:</b><a href="http://www.ballance.co.nz/"> Ballance Agri-Nutrients, Taranaki</a></td>
+				 		<td align="right"><b>LOB:</b> Crop Fertilisation</td>		
+					</tr>
+				</table>
+				<content class="employment">
 					<p>As part of an engineering work placement, I spent the summer at Ballance Agri-Nutrients working as an Instrumentation and Electrical Engineering Assistant. I spent most of my time working on a PLC replacement project. I was working with ABB’s AC800M PLC and was required to write multiple PLC programs in various languages, as well as produce a new HMI Panel for the operators to use.</p>
 					<p>The remainder of the time was spent working with Ballance’s Distributed Control System, assisting with maintenance and upgrades. As my time at Ballance drew to a close, I was required to use and improve my time management skills in order for my work to be in a state ready for continuation.</p>
 					<p><b>Responsibilities</b></p>
@@ -183,17 +185,17 @@
 
 			<article class="topContent">
 				<header>
-					<h2 class="ohead">Engineering Temp</h2>
+					<h2 class="collapseHead"><a name="stratex">Engineering Temp</a></h2>
 				</header>
 				<p><i>Jun 2011–Jul 2011</i></p>
 				<p><i>Nov 2010–Feb 2011</i></p>
 					<table style="width:100%">
 						<tr>
-					 		<td><b>Company:</b> Stratex</td>
-					 		<td><b>LOB:</b> Engineering Manufacturing</td>		
+					 		<td><b>Company:</b><a href="http://www.stratexgroup.co.nz/"> Stratex</a></td>
+					 		<td align="right"><b>LOB:</b> Engineering Manufacturing</td>		
 						</tr>
 					</table>
-				<content>
+				<content class="employment">
 					<p>Stratex is an engineering company which produces a range of products. During my time there I learnt a number of relevant skills, including PLC Programming, AutoCAD, basic Crystal Reports writing, Workmate.NET (asset management program) and general Electrical and Mechanical skills.</p>
 					<p>I also gained experience in learning to deal with particular individuals, which taught me patience, respect to others and how to work well with my co-workers. As I was in a factory environment, I also learnt how the workplace functions and operates. When I returned to Stratex during the semester break, I was performing Electrical Maintenance on the machines under the guidance of the Electrical Technicians. This included thermocouple calibrations and heater fan maintenance.</p>
 					<p><b>Responsibilities</b></p>

@@ -5,6 +5,8 @@
 	<title>My Website</title>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="../style.css" type="text/css" />
+	<link rel="stylesheet" href="cv.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="cv.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>		
@@ -40,21 +42,37 @@
 					<h2 class="ohead">Interests</h2>
 				</header>
 				<content>
-						<div onClick="openClose('astro')" style="cursor:hand; cursor:pointer" class="skills"><b>Astronomy and Cosmology</b></div>
-					<div id="astro" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Astronomy and Cosmology
+						</div>
+						<div class="childText">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
 					</div>
-					<div onClick="openClose('crick')" style="cursor:hand; cursor:pointer" class="skills"><b>Cricket</b></div>
-					<div id="crick" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Cricket
+						</div>
+						<div class="childText">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
 					</div>
-					<div onClick="openClose('music')" style="cursor:hand; cursor:pointer" class="skills"><b>Music</b></div>
-					<div id="music" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Music
+						</div>
+						<div class="childText">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
 					</div>
-					<div onClick="openClose('football')" style="cursor:hand; cursor:pointer" class="skills"><b>Football</b></div>
-					<div id="football" class="texter">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacinia lacus, vel fermentum tortor. Vestibulum bibendum ullamcorper rhoncus. Morbi posuere euismod nibh eleifend laoreet. Phasellus placerat dolor quis aliquam mollis. Proin luctus augue et est convallis, sit amet imperdiet ex convallis.<br />
+					<div class="toggleParent">
+						<div class="parentText">
+							Football
+						</div>
+						<div class="childText">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
 					</div>
 				</content>
 			</article>

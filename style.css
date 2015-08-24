@@ -7,24 +7,34 @@ body{
 	text-align: justify;
 }
 
-a{
+
+
+p a, td a{
 	text-decoration: none;
 }
 
-a:link, a:visited{
+p a:visited, p a:active, p a:link,
+td a:visited, td a:active, td a:link{
+	color:#000;
+	transition: color 0.2s;
+}
+
+p a:hover, td a:hover{
+	color:#CF5C3F;
+}
+
+h2{
+	color: #CF5C3F;
+}
+
+h2 a{
+	text-decoration: none;
+	color: #CF5C3F;
+	transition: color 0.2s;
+}
+
+h2 a:hover{
 	color: #000;
-}
-
-a:hover, a:active{
-	color: #CF5C3F;
-}
-
-.ohead{
-	color: #CF5C3F;
-}
-
-.ohead a{
-	color: #CF5C3F;
 }
 
 .body{
@@ -44,7 +54,7 @@ a:hover, a:active{
 	height: 40px;
 	margin-top: 5%;
 	border-bottom: 2px solid white;
-	font-size: 140%; /*Base font size is 14px*/
+	font-size: 120%; /*Base font size is 14px*/
 	font-family: Tahoma, 'Lucidia Sans Unicode';
 }
 
@@ -57,14 +67,17 @@ a:hover, a:active{
 .mainNav ul li{
 	float: left;
 	display: inline;
+}
 
+.mainNav a{
+	text-decoration: none;
 }
 
 .mainNav a:link, .mainNav a:visited{
 	color: #FFF;
 	transition: color 0.5s;
 	display: inline-block;
-	padding: 10px 25px;
+	padding: 10px 20px;
 	height: 20px;
 }
 
@@ -80,7 +93,7 @@ a:hover, a:active{
 	background-color: rgb(100,100,100);
 	width: 15%;
 	border-right: 2px solid white;
-	font-size: 140%; /*Base font size is 14px*/
+	font-size: 120%; /*Base font size is 14px*/
 	font-family: Tahoma, 'Lucidia Sans Unicode';
 	margin-top: 2%;
 	margin-right: 2%;
@@ -96,6 +109,10 @@ a:hover, a:active{
 	background-color: rgb(100,100,100);
 	margin-bottom:8px;
 	margin-right:7px;
+}
+
+.cvNav a{
+	text-decoration: none;
 }
 
 .cvNav a:link, .cvNav a:visited{
@@ -205,21 +222,6 @@ a:hover, a:active{
 	width: 92%;
 	margin: 1.2% auto;
 	color: #FFF;
-}
-
-
-.parentText {
-	font-weight: bold;
-	cursor:pointer;
-	transition: color 0.2s;
-}
-
-.parentText:hover{
-	color: #CF5C3F;
-}
-
-.childText {
-	display: none;
 }
 
 @media only screen and (min-width: 150px) and (max-width: 600px){
