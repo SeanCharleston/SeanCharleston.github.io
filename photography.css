@@ -57,14 +57,14 @@ section.module.parallax h1 {
   margin:20px;
 }
 section.module.parallax-1 {
-  background-image: url("img/photography/guitar.jpg"); 
+  background-image: url("img/photography/guitarSmall.JPG"); 
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   margin-top:20px;
 }
 section.module.parallax-2 {
-  background-image: url("img/photography/guitar.JPG");
+  background-image: url("img/photography/keyboardSmall.jpg");
 }
 section.module.parallax-3 {
   background-image: url("img/photography/munichSmall.jpg");
